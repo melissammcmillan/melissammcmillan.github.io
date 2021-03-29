@@ -202,6 +202,16 @@
                             <img class="img-fluid mx-auto d-block" src="assets/img/portfolio/reddit.png" alt="" />
                         </div>
                     </div>
+                    <!-- Portfolio Item 4-->
+                    <div class="col-md-6 col-lg-4 mb-5">
+                        <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal3">
+                            <div class="subheading mb-3 text-center">Scotch Recommender Passion Project</div>
+                            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                                <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
+                            </div>
+                            <img class="img-fluid mx-auto d-block" src="assets/img/portfolio/Label_1_Scotches_Radar_Plot.png" alt="" />
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
@@ -452,6 +462,42 @@
                                     <p class="mb-5">There is overlap between the Game of Thrones fan base and the Lord of the Rings fan base, and sometimes their posts get mixed up on their respective subreddit pages. The goal is to build a classifier that can determine which subreddit a post is from given the text of each post. I used Pushshift API to scrape over 10,000 posts between each subreddit page, and cleaned the posts for missing values, emojis, and special characters in order to refine my model.</p>
                                     <p class="mb-5">I compared both the Tfidf Vectorizer and the CountVectorizer in both a Multinomial Naïve Bayes Classifier and Random Forest Classifier to understand performance, along with utilization of stop word removal. The best performing model was the Random Forest Classifier with a Recall score of 91% and test accuracy of 93% and was successfully able to discern between posts of each subreddit page.  </p>
                                     <p class="mb-5">To read more about this project, please click <a href="https://github.com/melissammcmillan/NLP_Reddit_Classification" target="blank_">here </a> </p>
+                                    <button class="btn btn-primary" data-dismiss="modal">
+                                        <i class="fas fa-times fa-fw"></i>
+                                        Close Window
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Portfolio Modal 4-->
+        <div class="portfolio-modal modal fade" id="portfolioModal4" tabindex="-1" role="dialog" aria-labelledby="portfolioModal4Label" aria-hidden="true">
+            <div class="modal-dialog modal-xl" role="document">
+                <div class="modal-content">
+                    <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true"><i class="fas fa-times"></i></span>
+                    </button>
+                    <div class="modal-body text-center">
+                        <div class="container">
+                            <div class="row justify-content-center">
+                                <div class="col-lg-8">
+                                    <!-- Portfolio Modal - Title-->
+                                    <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0" id="portfolioModal4Label">Scotch Whisky Recommender App Using K-Means Clustering</h2>
+                                    <!-- Icon Divider-->
+                                    <div class="divider-custom">
+                                        <div class="divider-custom-line"></div>
+                                        <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                                        <div class="divider-custom-line"></div>
+                                    </div>
+                                    <!-- Portfolio Modal - Image-->
+                                    <img class="img-fluid rounded mb-5" src="assets/img/portfolio/Label_1_Scotches_Radar_Plot.png" alt="" />
+                                    <!-- Portfolio Modal - Text-->
+                                    <p class="mb-5">I have wanted to build a Scotch Recommender App for quite some time, so this Passion Project has been so much fun to work on and roll out. I used a simple dataset composed of 85 distilleries throughout Scotland classified by their flavor profiles on a scale from 0 to 4. I used the K-Means Clustering algorithm to group the scotches by these flavor profiles, utilizing the elbow method comparison of inertia and silhouette score to determine the appropriate range of clusters to begin my experimentation. I determined that 3 clusters was an optimal number of clusters to use based on both the elbow method results and the groupings of scotches. The three clusters grouped the main flavor profiles of scotch nicely: Label 0 corresponds to scotches containing a Honey/Spicy/Wine flavor, Label 1 corresponds to scotches with the most Smoky and Medicinal flavors (pictured here in the Radar plot), and Label 2 contains the most Sweet/Floral/Fruity flavored scotches. </p>
+                                    <p class="mb-5">Once I was satisfied with the groupings, I exported the scotches with their labels for use in the Recommender App itself. I utilized Streamlit to host my App, and it can be found <a href="https://share.streamlit.io/melissammcmillan/scotch_recommender/main/Recommender_App.py" target="blank_">here </a>. The user can decide if they would like a scotch/distillery recommendation by the group/category of scotch they are in the mood for, or use an existing distillery from the list they know they like and find another distillery that is similar in flavor profile. The App is currently in a very basic format, with little sparkle or fluff, but is considered a Minimum Viable Product for now and I will enhance the look and functionality as time permits. I hope you enjoy the App, I know I certainly am as I have used it to try new scotches already! </p>
+                                    <p class="mb-5">To read more about this project, please click <a href="https://github.com/melissammcmillan/Scotch_Recommender" target="blank_">here </a> </p>
                                     <button class="btn btn-primary" data-dismiss="modal">
                                         <i class="fas fa-times fa-fw"></i>
                                         Close Window
